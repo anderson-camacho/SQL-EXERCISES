@@ -127,7 +127,33 @@ order by CITIES.ID;
 
 
 
+select s.name as "nombre tienda"
+from stores s join cities c on s.city_id = c.id
 
+_______________
+select s.name as "nombre tienda"
+from stores s join cities c on s.city_id = c.id
+_______________
+select s.name as "nombre tienda", c.name as "Nombre Ciudad"
+from stores s join cities c on s.city_id = c.id join departments d on c.department_id = d.id
+_______________
+select s.name as "nombre tienda", c.name as "Nombre Ciudad", d.name as "Nombre Departamento"
+from stores s join cities c on s.city_id = c.id join departments d on c.department_id = d.id
+_______________
+select *
+from employees e join stores s on e.store_work = s.id 
+                 join cities c on s.city_id = c.id 
+                 join departments d on c.department_id = d.id
+_______________
+select e.complete_name, d.name
+from employees e join stores s on e.store_work = s.id 
+                 join cities c on s.city_id = c.id 
+                 join departments d on c.department_id = d.id
 
-
+_______________
+select e.complete_name
+from employees e join stores s on e.store_work = s.id 
+                 join cities c on s.city_id = c.id 
+                 join departments d on c.department_id = d.id
+where d.id = 3
 
