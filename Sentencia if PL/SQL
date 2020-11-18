@@ -37,3 +37,26 @@ ELSIF condition2 THEN
 ELSE
     {...statements to execute when condition is FALSE...}
 END IF;
+
+
+
+
+
+
+--SENTENCIA EJECUTABLE
+
+DECLARE
+    verdadero BOOLEAN:=TRUE;
+    falso   BOOLEAN:=FALSE;
+BEGIN
+    IF falso THEN
+        DBMS_OUTPUT.PUT_LINE('SENTENCIA EN PRIMER IF');
+    ELSIF falso THEN
+        DBMS_OUTPUT.PUT_LINE('SENTENCIA EN SEGUNDO IF');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('SENTENCIA EN TERCERA IF');
+    END IF;    
+EXCEPTION
+    WHEN OTHERS THEN
+        NULL;
+END;
