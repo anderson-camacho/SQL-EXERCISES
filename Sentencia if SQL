@@ -1,0 +1,39 @@
+--ESTRUCTURA BASICA DE LS SENTENCIA IF
+IF condition THEN
+    {...statements to execute when condition is TRUE...}
+END IF;
+
+--basica Anidado
+IF condition THEN
+    {...statements to execute when condition is TRUE...}
+    IF condition THEN
+        {...statements to execute when condition is TRUE...}
+        IF condition THEN
+            {...statements to execute when condition is TRUE...}
+        END IF;
+    END IF;
+END IF;
+
+
+--ESTRUCTURA DE LA SENTENCIA IF-ELSE
+IF condition THEN
+    {...statements to execute when condition is TRUE...}
+ELSE
+    {...statements to execute when condition is FALSE...}
+END IF;
+
+--ESTRUCTURA DE LA SENTENCIA IF-ELSIF
+IF condition1 THEN
+    {...statements to execute when condition1 is TRUE...}
+ELSIF condition2 THEN
+    {...statements to execute when condition2 is TRUE...}
+END IF;
+
+--ESTRUCTURA CON TODOS LOS ELEMENTOS
+IF condition1 THEN
+    {...statements to execute when condition is TRUE...}
+ELSIF condition2 THEN
+    {...statements to execute when condition is TRUE...}
+ELSE
+    {...statements to execute when condition is FALSE...}
+END IF;
